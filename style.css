@@ -1,17 +1,36 @@
 h1 {
-background-color: aqua;
-text-align: center;
+    background-color: aqua;
+    text-align: center;
 }
 
+
+#welcomeMessage,
+#statistics {
+    text-align: center;
+    background: linear-gradient(to left, beige, lightgreen);
+    margin-left: 20px;
+}
+
+#welcomeMessage {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+#statistics {
+    font-size: 20px;
+}
+
+
+
 body {
-min-height: 100vh;
-margin: 0;
-background-color: gold;
-background-image: url('IMG_20251115_151708[1].png');
-background-repeat: no-repeat;
-background-attachment: fixed;
-background-position: center;
-background-size: cover;
+    min-height: 100vh;
+    margin: 0;
+    background-color: gold;
+    background-image: url('IMG_20251115_151708[1].png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
 }
 
 #box1,
@@ -19,33 +38,33 @@ background-size: cover;
 #box3,
 #box4,
 #box5 {
-background: greenyellow;
-border: 2px solid;
-width: 200px;
-height: 200px;
-margin-bottom: 10px;
-box-sizing: border-box;
+    background: greenyellow;
+    border: 2px solid;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
 }
 
 #calendar {
-display: flex;
-gap: 30px;
-align-items: flex-start;
-justify-content: center;
-flex-wrap: wrap;
-margin: 0 auto;
-padding: 20px;
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 #week1,
 #week2,
 #week3,
 #week4 {
-display: grid;
-grid-template-columns: 1fr;
-gap: 20px;
-align-items: start;
-border: 2px solid black;
-padding: 10px;
-justify-items: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    align-items: start;
+    border: 2px solid black;
+    padding: 10px;
+    justify-items: center;
 }
