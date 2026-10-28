@@ -4,308 +4,654 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <title>Trading Journal | Dashboard</title>
+
     <link rel="stylesheet" href="style.css">
-
-    <h1>TRADING JOURNAL</h1>
-
 </head>
 
 <body>
-    <p id="welcomeMessage"></p>
-    <div id="statistics">
-    <h2>TRADING STATISTICS</h2>
-    <p>Let's test your strategy's win rate</p>
 
+    <!-- Sidebar navigation -->
+    <aside id="sideMenu" class="sidebar">
 
-<p>Total Wins: <span id="totalWins">0</span></p>
-
-<p>Total Losses: <span id="totalLosses">0</span></p>
-
-<p>Win Rate: <span id="winRate">0%</span></p>
-
-
-</div>
-
-    <div id="calendar">
-        <div id="week1">
-            <h2>WEEK 1</h2>
-            <div id="box1">
-                <h3>Monday</h3>
-
-                <label>
-                    <input type="radio" name="week1MondayResult" value="win">
-                    Win 🟢
-                </label>
-
-                <label>
-                    <input type="radio" name="week1MondayResult" value="loss">
-                    Loss 🔴
-                </label>
-            </div>
-            <div id="box2">
-                <h3>Tuesday</h3>
-
-                <label>
-                    <input type="radio" name="week1TuesdayResult" value="win">
-                    Win 🟢
-                </label>
-
-                <label>
-                    <input type="radio" name="week1TuesdayResult" value="loss">
-                    Loss 🔴
-                </label>
-            </div>
-            <div id="box3">
-                <h3>Wednesday</h3>
-
-                <label>
-                    <input type="radio" name="week1WednesdayResult" value="win">
-                    Win 🟢
-                </label>
-
-                <label>
-                    <input type="radio" name="week1WednesdayResult" value="loss">
-                    Loss 🔴
-                </label>
-            </div>
-            <div id="box4">
-                <h3>Thursday</h3>
-
-                <label>
-                    <input type="radio" name="week1ThursdayResult" value="win">
-                    Win 🟢
-                </label>
-
-                <label>
-                    <input type="radio" name="week1ThursdayResult" value="loss">
-                    Loss 🔴
-                </label>
-            </div>
-            <div id="box5">
-                <h3>Friday</h3>
-
-                <label>
-                    <input type="radio" name="week1FridayResult" value="win">
-                    Win 🟢
-                </label>
-
-                <label>
-                    <input type="radio" name="week1FridayResult" value="loss">
-                    Loss 🔴
-                </label>
-            </div>
-        </div>
-        <div id="week2">
-            <h2>WEEK 2</h2>
-            <div id="box1">
-                <h3>Monday</h3>
-
-                <label>
-                    <input type="radio" name="week2MondayResult" value="win">
-                    Win 🟢
-                </label>
-
-                <label>
-                    <input type="radio" name="week2MondayResult" value="loss">
-                    Loss 🔴
-                </label>
-            </div>
-            <div id="box2">
-                <h3>Tuesday</h3>
-
-                <label>
-                    <input type="radio" name="week2TuesdayResult" value="win">
-                    Win 🟢
-                </label>
-
-                <label>
-                    <input type="radio" name="week2TuesdayResult" value="loss">
-                    Loss 🔴
-                </label>
-            </div>
-            <div id="box3">
-                <h3>Wednesday</h3>
-
-                <label>
-                    <input type="radio" name="week2WednesdayResult" value="win">
-                    Win 🟢
-                </label>
-
-                <label>
-                    <input type="radio" name="week2WednesdayResult" value="loss">
-                    Loss 🔴
-                </label>
-            </div>
-            <div id="box4">
-                <h3>Thursday</h3>
-
-                <label>
-                    <input type="radio" name="week2ThursdayResult" value="win">
-                    Win 🟢
-                </label>
-
-                <label>
-                    <input type="radio" name="week2ThursdayResult" value="loss">
-                    Loss 🔴
-                </label>
-            </div>
-            <div id="box5">
-                <h3>Friday</h3>
-
-                <label>
-                    <input type="radio" name="week2FridayResult" value="win">
-                    Win 🟢
-                </label>
-
-                <label>
-                    <input type="radio" name="week2FridayResult" value="loss">
-                    Loss 🔴
-                </label>
-            </div>
-        </div>
-        <div id="week3">
-            <h2>WEEK3</h2>
-            <div id="box1">
-                <h3>Monday</h3>
-
-                <label>
-                    <input type="radio" name="week3MondayResult" value="win">
-                    Win 🟢
-                </label>
-
-                <label>
-                    <input type="radio" name="week3MondayResult" value="loss">
-                    Loss 🔴
-                </label>
-            </div>
-            <div id="box2">
-                <h3>Tuesday</h3>
-
-                <label>
-                    <input type="radio" name="week3TuesdayResult" value="win">
-                    Win 🟢
-                </label>
-
-                <label>
-                    <input type="radio" name="week3TuesdayResult" value="loss">
-                    Loss 🔴
-                </label>
-            </div>
-            <div id="box3">
-                <h3>Wednesday</h3>
-
-                <label>
-                    <input type="radio" name="week3WednesdayResult" value="win">
-                    Win 🟢
-                </label>
-
-                <label>
-                    <input type="radio" name="week3WednesdayResult" value="loss">
-                    Loss 🔴
-                </label>
-            </div>
-            <div id="box4">
-                <h3>Thursday</h3>
-
-                <label>
-                    <input type="radio" name="week3ThursdayResult" value="win">
-                    Win 🟢
-                </label>
-
-                <label>
-                    <input type="radio" name="week3ThursdayResult" value="loss">
-                    Loss 🔴
-                </label>
-            </div>
-            <div id="box5">
-                <h3>Friday</h3>
-
-                <label>
-                    <input type="radio" name="week3FridayResult" value="win">
-                    Win 🟢
-                </label>
-
-                <label>
-                    <input type="radio" name="week3FridayResult" value="loss">
-                    Loss 🔴
-                </label>
+        <div class="sidebar-brand">
+            <div class="brand-icon">T</div>
+            <div>
+                <h2>TradeJournal</h2>
+                <p>TRADING WORKSPACE</p>
             </div>
         </div>
 
-        <div id="week4">
-            <h2>WEEK 4 </h2>
-            <div id="box1">
-                <h3>Monday</h3>
+        <button id="closeMenu" class="close-menu" aria-label="Close menu">
+            &times;
+        </button>
 
-                <label>
-                    <input type="radio" name="week4MondayResult" value="win">
-                    Win 🟢
-                </label>
+        <p class="menu-label">WORKSPACE</p>
 
-                <label>
-                    <input type="radio" name="week4MondayResult" value="loss">
-                    Loss 🔴
-                </label>
-            </div>
-            <div id="box2">
-                <h3>Tuesday</h3>
+        <nav class="navigation">
 
-                <label>
-                    <input type="radio" name="week4TuesdayResult" value="win">
-                    Win 🟢
-                </label>
+            <a href="#dashboard" class="nav-link active" data-section="dashboard">
+                <span class="nav-icon">⌂</span>
+                Dashboard
+            </a>
 
-                <label>
-                    <input type="radio" name="week4TuesdayResult" value="loss">
-                    Loss 🔴
-                </label>
-            </div>
-            <div id="box3">
-                <h3>Wednesday</h3>
+            <a href="#analytics" class="nav-link" data-section="analytics">
+                <span class="nav-icon">▥</span>
+                Analytics
+            </a>
 
-                <label>
-                    <input type="radio" name="week4WednesdayResult" value="win">
-                    Win 🟢
-                </label>
+            <a href="#calendarSection" class="nav-link" data-section="calendarSection">
+                <span class="nav-icon">▦</span>
+                Trading Calendar
+            </a>
 
-                <label>
-                    <input type="radio" name="week4WednesdayResult" value="loss">
-                    Loss 🔴
-                </label>
-            </div>
-            <div id="box4">
-                <h3>Thursday</h3>
+            <a href="#cycleHistory" class="nav-link" data-section="cycleHistory">
+                <span class="nav-icon">◷</span>
+                Cycle History
+            </a>
 
-                <label>
-                    <input type="radio" name="week4ThursdayResult" value="win">
-                    Win 🟢
-                </label>
+        </nav>
 
-                <label>
-                    <input type="radio" name="week4ThursdayResult" value="loss">
-                    Loss 🔴
-                </label>
-            </div>
-            <div id="box5">
-                <h3>Friday</h3>
-
-                <label>
-                    <input type="radio" name="week4FridayResult" value="win">
-                    Win 🟢
-                </label>
-
-                <label>
-                    <input type="radio" name="week4FridayResult" value="loss">
-                    Loss 🔴
-                </label>
-            </div>
+        <div class="sidebar-footer">
+            <div class="status-dot"></div>
+            <span>Your journal is saved locally</span>
         </div>
-    </div>
 
+    </aside>
 
+    <!-- Background overlay for mobile menu -->
+    <div id="menuOverlay" class="menu-overlay"></div>
+
+    <!-- Main application -->
+    <main class="main-content">
+
+        <!-- Top navigation -->
+        <header class="topbar">
+
+            <button
+                id="menuButton"
+                class="menu-button"
+                aria-label="Open navigation menu"
+                aria-expanded="false">
+                ☰
+            </button>
+
+            <div class="topbar-title">
+                <span class="eyebrow">YOUR TRADING WORKSPACE</span>
+                <h1>Trading Journal</h1>
+            </div>
+
+            <div class="topbar-right">
+                <span class="live-indicator"></span>
+                <span class="topbar-status">Personal journal</span>
+            </div>
+
+        </header>
+
+        <!-- Dashboard -->
+        <section id="dashboard" class="page-section">
+
+            <div class="welcome-section">
+                <div>
+                    <p class="eyebrow">YOUR PERFORMANCE, YOUR DISCIPLINE</p>
+                    <h2>Welcome back, <span id="userNameDisplay">Trader</span></h2>
+                    <p class="muted-text">
+                        Track your trades, review your results, and stay consistent.
+                    </p>
+                </div>
+
+                <div class="date-badge">
+                    <span class="date-dot"></span>
+                    20-trading-day cycle
+                </div>
+            </div>
+
+            <!-- Statistics -->
+            <section id="analytics" class="statistics-section">
+
+                <div class="section-heading">
+                    <div>
+                        <p class="eyebrow">PERFORMANCE OVERVIEW</p>
+                        <h2>Trading Statistics</h2>
+                    </div>
+                    <span class="section-tag">CURRENT CYCLE</span>
+                </div>
+
+                <div class="stats-grid">
+
+                    <article class="stat-card">
+                        <div class="stat-card-top">
+                            <span class="stat-label">Total Wins</span>
+                            <span class="stat-symbol win-symbol">W</span>
+                        </div>
+
+                        <p id="totalWins" class="stat-value">0</p>
+                        <p class="stat-description">Winning trading days</p>
+                    </article>
+
+                    <article class="stat-card">
+                        <div class="stat-card-top">
+                            <span class="stat-label">Total Losses</span>
+                            <span class="stat-symbol loss-symbol">L</span>
+                        </div>
+
+                        <p id="totalLosses" class="stat-value">0</p>
+                        <p class="stat-description">Losing trading days</p>
+                    </article>
+
+                    <article class="stat-card">
+                        <div class="stat-card-top">
+                            <span class="stat-label">Win Rate</span>
+                            <span class="stat-symbol rate-symbol">%</span>
+                        </div>
+
+                        <p id="winRate" class="stat-value">0%</p>
+                        <p class="stat-description">Wins ÷ recorded results</p>
+                    </article>
+
+                    <article class="stat-card">
+                        <div class="stat-card-top">
+                            <span class="stat-label">Recorded Days</span>
+                            <span class="stat-symbol days-symbol">D</span>
+                        </div>
+
+                        <p id="recordedDays" class="stat-value">0/20</p>
+                        <p class="stat-description">Days with a result</p>
+                    </article>
+
+                </div>
+
+                <div class="progress-panel">
+                    <div class="progress-information">
+                        <div>
+                            <h3>Cycle Progress</h3>
+                            <p class="muted-text">
+                                Complete your trading journal one day at a time.
+                            </p>
+                        </div>
+
+                        <strong id="progressText">0 of 20 days</strong>
+                    </div>
+
+                    <div
+                        class="progress-track"
+                        role="progressbar"
+                        aria-label="Trading cycle progress"
+                        aria-valuemin="0"
+                        aria-valuemax="20"
+                        aria-valuenow="0"
+                        id="progressBar">
+                        <div id="progressFill" class="progress-fill"></div>
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- Calendar -->
+            <section id="calendarSection" class="calendar-section">
+
+                <div class="section-heading calendar-heading">
+                    <div>
+                        <p class="eyebrow">YOUR DAILY RECORDS</p>
+                        <h2>Trading Calendar</h2>
+                        <p class="muted-text">
+                            Select Win or Loss for each day you trade.
+                        </p>
+                    </div>
+
+                    <span class="section-tag">4 WEEKS</span>
+                </div>
+
+                <div class="calendar-legend">
+                    <span><i class="legend-dot win-dot"></i> Win</span>
+                    <span><i class="legend-dot loss-dot"></i> Loss</span>
+                    <span><i class="legend-dot empty-dot"></i> Not recorded</span>
+                </div>
+
+                <div id="calendar" class="calendar-grid">
+
+                    <!-- Week 1 -->
+                    <div id="week1" class="week-column">
+                        <div class="week-heading">
+                            <h3>Week 01</h3>
+                            <span>01–05</span>
+                        </div>
+
+                        <div id="box1" class="day-card" data-day="1">
+                            <div class="day-card-heading">
+                                <h4>Monday</h4>
+                                <span class="day-number">01</span>
+                            </div>
+                            <div class="day-options">
+                                <label class="result-option">
+                                    <input type="radio" name="week1MondayResult" value="win">
+                                    <span>Win</span>
+                                </label>
+                                <label class="result-option">
+                                    <input type="radio" name="week1MondayResult" value="loss">
+                                    <span>Loss</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div id="box2" class="day-card" data-day="2">
+                            <div class="day-card-heading">
+                                <h4>Tuesday</h4>
+                                <span class="day-number">02</span>
+                            </div>
+                            <div class="day-options">
+                                <label class="result-option">
+                                    <input type="radio" name="week1TuesdayResult" value="win">
+                                    <span>Win</span>
+                                </label>
+                                <label class="result-option">
+                                    <input type="radio" name="week1TuesdayResult" value="loss">
+                                    <span>Loss</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div id="box3" class="day-card" data-day="3">
+                            <div class="day-card-heading">
+                                <h4>Wednesday</h4>
+                                <span class="day-number">03</span>
+                            </div>
+                            <div class="day-options">
+                                <label class="result-option">
+                                    <input type="radio" name="week1WednesdayResult" value="win">
+                                    <span>Win</span>
+                                </label>
+                                <label class="result-option">
+                                    <input type="radio" name="week1WednesdayResult" value="loss">
+                                    <span>Loss</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div id="box4" class="day-card" data-day="4">
+                            <div class="day-card-heading">
+                                <h4>Thursday</h4>
+                                <span class="day-number">04</span>
+                            </div>
+                            <div class="day-options">
+                                <label class="result-option">
+                                    <input type="radio" name="week1ThursdayResult" value="win">
+                                    <span>Win</span>
+                                </label>
+                                <label class="result-option">
+                                    <input type="radio" name="week1ThursdayResult" value="loss">
+                                    <span>Loss</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div id="box5" class="day-card" data-day="5">
+                            <div class="day-card-heading">
+                                <h4>Friday</h4>
+                                <span class="day-number">05</span>
+                            </div>
+                            <div class="day-options">
+                                <label class="result-option">
+                                    <input type="radio" name="week1FridayResult" value="win">
+                                    <span>Win</span>
+                                </label>
+                                <label class="result-option">
+                                    <input type="radio" name="week1FridayResult" value="loss">
+                                    <span>Loss</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Week 2 -->
+                    <div id="week2" class="week-column">
+                        <div class="week-heading">
+                            <h3>Week 02</h3>
+                            <span>06–10</span>
+                        </div>
+
+                        <div id="box6" class="day-card" data-day="6">
+                            <div class="day-card-heading">
+                                <h4>Monday</h4>
+                                <span class="day-number">06</span>
+                            </div>
+                            <div class="day-options">
+                                <label class="result-option">
+                                    <input type="radio" name="week2MondayResult" value="win">
+                                    <span>Win</span>
+                                </label>
+                                <label class="result-option">
+                                    <input type="radio" name="week2MondayResult" value="loss">
+                                    <span>Loss</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div id="box7" class="day-card" data-day="7">
+                            <div class="day-card-heading">
+                                <h4>Tuesday</h4>
+                                <span class="day-number">07</span>
+                            </div>
+                            <div class="day-options">
+                                <label class="result-option">
+                                    <input type="radio" name="week2TuesdayResult" value="win">
+                                    <span>Win</span>
+                                </label>
+                                <label class="result-option">
+                                    <input type="radio" name="week2TuesdayResult" value="loss">
+                                    <span>Loss</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div id="box8" class="day-card" data-day="8">
+                            <div class="day-card-heading">
+                                <h4>Wednesday</h4>
+                                <span class="day-number">08</span>
+                            </div>
+                            <div class="day-options">
+                                <label class="result-option">
+                                    <input type="radio" name="week2WednesdayResult" value="win">
+                                    <span>Win</span>
+                                </label>
+                                <label class="result-option">
+                                    <input type="radio" name="week2WednesdayResult" value="loss">
+                                    <span>Loss</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div id="box9" class="day-card" data-day="9">
+                            <div class="day-card-heading">
+                                <h4>Thursday</h4>
+                                <span class="day-number">09</span>
+                            </div>
+                            <div class="day-options">
+                                <label class="result-option">
+                                    <input type="radio" name="week2ThursdayResult" value="win">
+                                    <span>Win</span>
+                                </label>
+                                <label class="result-option">
+                                    <input type="radio" name="week2ThursdayResult" value="loss">
+                                    <span>Loss</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div id="box10" class="day-card" data-day="10">
+                            <div class="day-card-heading">
+                                <h4>Friday</h4>
+                                <span class="day-number">10</span>
+                            </div>
+                            <div class="day-options">
+                                <label class="result-option">
+                                    <input type="radio" name="week2FridayResult" value="win">
+                                    <span>Win</span>
+                                </label>
+                                <label class="result-option">
+                                    <input type="radio" name="week2FridayResult" value="loss">
+                                    <span>Loss</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Week 3 -->
+                    <div id="week3" class="week-column">
+                        <div class="week-heading">
+                            <h3>Week 03</h3>
+                            <span>11–15</span>
+                        </div>
+
+                        <div id="box11" class="day-card" data-day="11">
+                            <div class="day-card-heading">
+                                <h4>Monday</h4>
+                                <span class="day-number">11</span>
+                            </div>
+                            <div class="day-options">
+                                <label class="result-option">
+                                    <input type="radio" name="week3MondayResult" value="win">
+                                    <span>Win</span>
+                                </label>
+                                <label class="result-option">
+                                    <input type="radio" name="week3MondayResult" value="loss">
+                                    <span>Loss</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div id="box12" class="day-card" data-day="12">
+                            <div class="day-card-heading">
+                                <h4>Tuesday</h4>
+                                <span class="day-number">12</span>
+                            </div>
+                            <div class="day-options">
+                                <label class="result-option">
+                                    <input type="radio" name="week3TuesdayResult" value="win">
+                                    <span>Win</span>
+                                </label>
+                                <label class="result-option">
+                                    <input type="radio" name="week3TuesdayResult" value="loss">
+                                    <span>Loss</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div id="box13" class="day-card" data-day="13">
+                            <div class="day-card-heading">
+                                <h4>Wednesday</h4>
+                                <span class="day-number">13</span>
+                            </div>
+                            <div class="day-options">
+                                <label class="result-option">
+                                    <input type="radio" name="week3WednesdayResult" value="win">
+                                    <span>Win</span>
+                                </label>
+                                <label class="result-option">
+                                    <input type="radio" name="week3WednesdayResult" value="loss">
+                                    <span>Loss</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div id="box14" class="day-card" data-day="14">
+                            <div class="day-card-heading">
+                                <h4>Thursday</h4>
+                                <span class="day-number">14</span>
+                            </div>
+                            <div class="day-options">
+                                <label class="result-option">
+                                    <input type="radio" name="week3ThursdayResult" value="win">
+                                    <span>Win</span>
+                                </label>
+                                <label class="result-option">
+                                    <input type="radio" name="week3ThursdayResult" value="loss">
+                                    <span>Loss</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div id="box15" class="day-card" data-day="15">
+                            <div class="day-card-heading">
+                                <h4>Friday</h4>
+                                <span class="day-number">15</span>
+                            </div>
+                            <div class="day-options">
+                                <label class="result-option">
+                                    <input type="radio" name="week3FridayResult" value="win">
+                                    <span>Win</span>
+                                </label>
+                                <label class="result-option">
+                                    <input type="radio" name="week3FridayResult" value="loss">
+                                    <span>Loss</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Week 4 -->
+                    <div id="week4" class="week-column">
+                        <div class="week-heading">
+                            <h3>Week 04</h3>
+                            <span>16–20</span>
+                        </div>
+
+                        <div id="box16" class="day-card" data-day="16">
+                            <div class="day-card-heading">
+                                <h4>Monday</h4>
+                                <span class="day-number">16</span>
+                            </div>
+                            <div class="day-options">
+                                <label class="result-option">
+                                    <input type="radio" name="week4MondayResult" value="win">
+                                    <span>Win</span>
+                                </label>
+                                <label class="result-option">
+                                    <input type="radio" name="week4MondayResult" value="loss">
+                                    <span>Loss</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div id="box17" class="day-card" data-day="17">
+                            <div class="day-card-heading">
+                                <h4>Tuesday</h4>
+                                <span class="day-number">17</span>
+                            </div>
+                            <div class="day-options">
+                                <label class="result-option">
+                                    <input type="radio" name="week4TuesdayResult" value="win">
+                                    <span>Win</span>
+                                </label>
+                                <label class="result-option">
+                                    <input type="radio" name="week4TuesdayResult" value="loss">
+                                    <span>Loss</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div id="box18" class="day-card" data-day="18">
+                            <div class="day-card-heading">
+                                <h4>Wednesday</h4>
+                                <span class="day-number">18</span>
+                            </div>
+                            <div class="day-options">
+                                <label class="result-option">
+                                    <input type="radio" name="week4WednesdayResult" value="win">
+                                    <span>Win</span>
+                                </label>
+                                <label class="result-option">
+                                    <input type="radio" name="week4WednesdayResult" value="loss">
+                                    <span>Loss</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div id="box19" class="day-card" data-day="19">
+                            <div class="day-card-heading">
+                                <h4>Thursday</h4>
+                                <span class="day-number">19</span>
+                            </div>
+                            <div class="day-options">
+                                <label class="result-option">
+                                    <input type="radio" name="week4ThursdayResult" value="win">
+                                    <span>Win</span>
+                                </label>
+                                <label class="result-option">
+                                    <input type="radio" name="week4ThursdayResult" value="loss">
+                                    <span>Loss</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div id="box20" class="day-card" data-day="20">
+                            <div class="day-card-heading">
+                                <h4>Friday</h4>
+                                <span class="day-number">20</span>
+                            </div>
+                            <div class="day-options">
+                                <label class="result-option">
+                                    <input type="radio" name="week4FridayResult" value="win">
+                                    <span>Win</span>
+                                </label>
+                                <label class="result-option">
+                                    <input type="radio" name="week4FridayResult" value="loss">
+                                    <span>Loss</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Complete cycle -->
+                <div class="cycle-actions">
+                    <div>
+                        <h3>Finished this trading cycle?</h3>
+                        <p class="muted-text">
+                            Save your results to your history before starting again.
+                        </p>
+                    </div>
+
+                    <button id="restartButton" class="primary-button">
+                        Complete Trading Cycle
+                        <span aria-hidden="true">→</span>
+                    </button>
+                </div>
+
+            </section>
+
+            <!-- Completed cycles -->
+            <section id="cycleHistory" class="history-section">
+
+                <div class="section-heading">
+                    <div>
+                        <p class="eyebrow">YOUR TRADING JOURNEY</p>
+                        <h2>Cycle History</h2>
+                        <p class="muted-text">
+                            Review your completed trading cycles.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="history-table-wrapper">
+
+                    <table class="history-table">
+                        <thead>
+                            <tr>
+                                <th>Cycle</th>
+                                <th>Completed</th>
+                                <th>Wins</th>
+                                <th>Losses</th>
+                                <th>Trades</th>
+                                <th>Win Rate</th>
+                            </tr>
+                        </thead>
+
+                        <tbody id="historyBody">
+                            <tr>
+                                <td colspan="6" class="empty-history">
+                                    No completed cycles yet. Your saved cycles will appear here.
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+
+            </section>
+
+            <footer class="page-footer">
+                <span>Trading Journal</span>
+                <span>Your results are stored in this browser.</span>
+            </footer>
+
+        </section>
+
+    </main>
 
     <script src="index.js"></script>
-</body>
 
+</body>
 </html>
